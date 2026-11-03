@@ -1,248 +1,924 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="Строительство домов, бассейнов, ремонт квартир, электрика и сантехника в Барселоне и по всей Испании. GARNIK PROPERTY SERVICES.">
-    <title>GARNIK PROPERTY SERVICES | Строительство и ремонт в Барселоне</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GARNIK PROPERTY SERVICES | Premium Construction Barcelona</title>
+
+<meta name="description"
+content="GARNIK PROPERTY SERVICES — premium construction, renovation, villas, swimming pools, electrical and plumbing services in Barcelona.">
+
+<meta name="keywords"
+content="construction Barcelona, renovation Barcelona, luxury villas Barcelona, swimming pools Barcelona, property services">
+
+<meta name="author" content="GARNIK PROPERTY SERVICES">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<header>
 
-    <nav>
-    <a href="#">Главная</a>
-    <a href="#services">Услуги</a>
-    <a href="#works">Наши работы</a>
-    <a href="#about">О нас</a>
-    <a href="#contacts">Контакты</a>
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navbar">
+
+<div class="container">
+
+<a href="#home" class="logo">
+
+<span class="logo-main">GARNIK</span>
+
+<span class="logo-small">PROPERTY SERVICES</span>
+
+</a>
+
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<ul class="menu">
+
+<li>
+<a href="#home" data-i18n="nav_home">Home</a>
+</li>
+
+<li>
+<a href="#services" data-i18n="nav_services">Services</a>
+</li>
+
+<li>
+<a href="#projects" data-i18n="nav_projects">Projects</a>
+</li>
+
+<li>
+<a href="#about" data-i18n="nav_about">About</a>
+</li>
+
+<li>
+<a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+</li>
+
+<li>
+<a href="#contact" data-i18n="nav_contact">Contact</a>
+</li>
+
+</ul>
+
+
+<div class="language">
+
+<button onclick="changeLanguage('ru')">RU</button>
+
+<button onclick="changeLanguage('es')">ES</button>
+
+<button onclick="changeLanguage('en')">EN</button>
+
+</div>
+
+</div>
+
 </nav>
-    
-<div class="logo">
-    GARNIK PROPERTY SERVICES
-</div>       
 
-<h1>
-Строительство и ремонт<br>
-<span>премиум качества</span><br>
-в Барселоне и в окрайностях
+
+
+<!-- ================= HERO ================= -->
+
+<header id="home" class="hero">
+
+<div class="hero-content">
+
+<div class="hero-top"
+data-i18n="hero_top">
+
+PREMIUM CONSTRUCTION COMPANY
+
+</div>
+
+
+<h1 data-i18n="hero_title">
+
+Luxury Construction<br>
+in Barcelona
+
 </h1>
 
-<p class="subtitle">
-Строительство домов • Бассейны • Ремонт • Электрика • Сантехника
+
+<p data-i18n="hero_text">
+
+Building villas, swimming pools,
+premium renovations and complete property solutions.
+
 </p>
 
-<p class="description">
-Более <strong>10 лет опыта</strong> в строительстве и ремонте.
-Выполняем проекты любой сложности под ключ.
-Бесплатный выезд специалиста и расчёт стоимости.
-</p>
-    
-<div class="buttons">
-<a href="#request" class="button">
-    Получить консультацию
+
+<div class="hero-buttons">
+
+<a href="#contact"
+class="btn btn-gold"
+data-i18n="hero_button">
+
+Free Estimate
+
 </a>
+
 
 <a href="https://wa.me/31616518113"
-   target="_blank"
-   class="button">
-    Написать в WhatsApp
+target="_blank"
+rel="noopener"
+class="btn btn-dark">
+
+WhatsApp
+
 </a>
+
 </div>
+
+
+<div class="hero-numbers">
+
+<div>
+
+<h2>150+</h2>
+
+<span data-i18n="hero_projects">
+Projects
+</span>
+
+</div>
+
+
+<div>
+
+<h2>10+</h2>
+
+<span data-i18n="hero_years">
+Years
+</span>
+
+</div>
+
+
+<div>
+
+<h2>100%</h2>
+
+<span data-i18n="hero_quality">
+Quality
+</span>
+
+</div>
+
+</div>
+
+</div>
+
 </header>
-<section class="stats">
 
-    <div class="stat">
-        <h3>150+</h3>
-        <p>Выполненных проектов</p>
-    </div>
 
-    <div class="stat">
-        <h3>120+</h3>
-        <p>Довольных клиентов</p>
-    </div>
 
-    <div class="stat">
-        <h3>10+</h3>
-        <p>Лет опыта</p>
-    </div>
-
-    <div class="stat">
-        <h3>100%</h3>
-        <p>Гарантия качества</p>
-    </div>
-
-</section>
+<!-- ================= SERVICES ================= -->
 
 <section id="services">
 
-<h2>Наши услуги</h2>
+<div class="container">
 
-<div class="services">
+<div class="section-title">
 
-    <div class="service">
-        🏠 Строительство домов
-    </div>
+<span data-i18n="services_label">
+OUR SERVICES
+</span>
 
-    <div class="service">
-        🏊 Строительство бассейнов
-    </div>
+<h2 data-i18n="services_title">
+Premium Construction Services
+</h2>
 
-    <div class="service">
-        🎨 Отделочные работы
-    </div>
+<p data-i18n="services_text">
+We provide complete construction and renovation services
+in Barcelona with the highest quality standards.
+</p>
 
-    <div class="service">
-        ⚡ Электрика
-    </div>
+</div>
 
-    <div class="service">
-        🚿 Сантехника
-    </div>
-    
-    <div class="service">
-    🪟 Установка окон
+
+<div class="services-grid">
+
+
+<div class="service-card">
+
+<div class="service-icon">🏠</div>
+
+<h3 data-i18n="service_villas_title">
+Luxury Villas
+</h3>
+
+<p data-i18n="service_villas_text">
+Complete construction of modern and luxury villas
+from foundation to finishing.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🏊</div>
+
+<h3 data-i18n="service_pool_title">
+Swimming Pools
+</h3>
+
+<p data-i18n="service_pool_text">
+Premium swimming pools with modern design
+and professional installation.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🎨</div>
+
+<h3 data-i18n="service_renovation_title">
+Renovation
+</h3>
+
+<p data-i18n="service_renovation_text">
+High-end apartment and house renovation
+using premium materials.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">⚡</div>
+
+<h3 data-i18n="service_electrical_title">
+Electrical Works
+</h3>
+
+<p data-i18n="service_electrical_text">
+Professional electrical installations
+for residential and commercial buildings.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🚿</div>
+
+<h3 data-i18n="service_plumbing_title">
+Plumbing
+</h3>
+
+<p data-i18n="service_plumbing_text">
+Complete plumbing systems with
+guaranteed quality.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🪟</div>
+
+<h3 data-i18n="service_windows_title">
+Windows & Doors
+</h3>
+
+<p data-i18n="service_windows_text">
+Installation of modern aluminium
+and PVC windows and doors.
+</p>
+
+</div>
+
+
 </div>
 
 </div>
-</section>
-<section>
-    <h2>Почему выбирают нас</h2>
 
-    <div class="service">✅ Более 10 лет опыта</div>
-    <div class="service">✅ Работаем по всей Испании</div>
-    <div class="service">✅ Бесплатный выезд и смета</div>
-    <div class="service">✅ Гарантия на выполненные работы</div>
 </section>
 
-<section id="works">
-    <h2>Наши работы</h2>
-    
-   <div class="gallery">
-   <img src="work1.jpg" alt="Строительство дома">
-   <img src="work2.jpg" alt="Ремонт">
-   <img src="work3.jpg" alt="Бассейн">
-   </div>
+<!-- ================= WHY US ================= -->
+<section class="why-us premium-why">
+    <div class="container">
+
+        <div class="section-title premium-why-title">
+            <span data-i18n="why_label">WHY CHOOSE US</span>
+
+            <h2 data-i18n="why_title">
+                Why Clients Trust GARNIK
+            </h2>
+
+            <p>
+                We combine experience, premium materials and precise execution
+                to deliver construction projects built to last.
+            </p>
+        </div>
+
+        <div class="premium-features">
+
+            <div class="premium-feature">
+                <div class="feature-number">01</div>
+
+                <div class="feature-icon">✦</div>
+
+                <h3 data-i18n="why_experience_title">
+                    10+ Years Experience
+                </h3>
+
+                <p data-i18n="why_experience_text">
+                    Professional construction team with years of experience in Spain.
+                </p>
+
+                <span class="feature-line"></span>
+            </div>
+
+
+            <div class="premium-feature">
+                <div class="feature-number">02</div>
+
+                <div class="feature-icon">◆</div>
+
+                <h3 data-i18n="why_materials_title">
+                    Premium Materials
+                </h3>
+
+                <p data-i18n="why_materials_text">
+                    We only work with trusted European suppliers and quality materials.
+                </p>
+
+                <span class="feature-line"></span>
+            </div>
+
+
+            <div class="premium-feature">
+                <div class="feature-number">03</div>
+
+                <div class="feature-icon">◷</div>
+
+                <h3 data-i18n="why_deadlines_title">
+                    Fixed Deadlines
+                </h3>
+
+                <p data-i18n="why_deadlines_text">
+                    Clear planning and professional project management keep every
+                    project on schedule.
+                </p>
+
+                <span class="feature-line"></span>
+            </div>
+
+
+            <div class="premium-feature">
+                <div class="feature-number">04</div>
+
+                <div class="feature-icon">✓</div>
+
+                <h3 data-i18n="why_quality_title">
+                    Quality Guarantee
+                </h3>
+
+                <p data-i18n="why_quality_text">
+                    Every project is completed with attention to detail,
+                    warranty and ongoing support.
+                </p>
+
+                <span class="feature-line"></span>
+            </div>
+
+        </div>
+
+        <div class="why-bottom">
+            <span>GARNIK PROPERTY SERVICES</span>
+            <strong>BUILT WITH PRECISION.</strong>
+        </div>
+
+    </div>
 </section>
 
-<section id="about">
-    <h2>О нас</h2>
-      <p>
-        Мы выполняем строительные и ремонтные работы любой сложности.
-        Работаем качественно, соблюдаем сроки и используем только
-        проверенные материалы.
-    </p>
-</section>
-<section id="request">
-    <h2>Оставить заявку</h2>
 
-<form class="contact-form" action="#" method="post">
+<!-- ================= PROJECTS ================= -->
 
-    <input type="text" placeholder="Ваше имя" required>
+<section id="projects" class="projects">
 
-    <input type="tel" placeholder="Телефон">
+<div class="container">
 
-    <input type="email" placeholder="E-mail">
+<div class="section-title">
 
-    <textarea placeholder="Опишите, какие работы вам нужны"></textarea>
+<span data-i18n="projects_label">
+OUR PROJECTS
+</span>
 
-        
-    <button type="submit">
-        Отправить заявку
+<h2 data-i18n="projects_title">
+Latest Construction Projects
+</h2>
+
+<p data-i18n="projects_text">
+Every project is completed with premium quality
+and attention to detail.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        <img src="images/work1.jpg"
+             alt="Luxury Villa"
+             loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/work2.jpg"
+             alt="Swimming Pool"
+             loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/work3.jpg"
+             alt="Luxury Renovation"
+             loading="lazy">
+    </div>
+
+</div>
+
+<!-- IMAGE LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        ×
     </button>
 
-</form>
+    <button class="lightbox-prev" id="lightboxPrev">
+        ‹
+    </button>
 
-</section>
-<section id="contacts">
-    <h2>Контакты</h2>
+    <img id="lightboxImage" src="" alt="Project">
 
-<div class="service">
-📞 Телефон:
-<a href="tel:+34657138132">
-+34 657 138 132
-</a>
-</div>
-<div class="service">
-💬 WhatsApp:
-<a href="https://wa.me/31616518113" target="_blank">
-+31 616 518 113
-</a>
+    <button class="lightbox-next" id="lightboxNext">
+        ›
+    </button>
+
 </div>
 
-    <div class="service">
-        📍 Работаем по всей Барселоне
-    </div>
-<iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.62416860527!2d2.14018905!3d41.39266805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2z0JHQsNGA0YHQtdC70L7QvdCw!5e0!3m2!1sru!2ses!4v1783472168502!5m2!1sru!2ses"
-    width="100%"
-    height="400"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin">
-</iframe>
+
+</div>
+
+</div>
 
 </section>
-   
-<section id="reviews">
-    <h2>Отзывы клиентов</h2>
 
-    <div class="reviews">
 
-        <div class="review">
-            <h3>⭐⭐⭐⭐⭐</h3>
-            <p>
-                «Отличная работа! Всё выполнено качественно и точно в срок.
-                Очень довольны ремонтом нашего дома.»
-            </p>
-            <strong>— Carlos, Barcelona</strong>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<span data-i18n="about_label">
+ABOUT US
+</span>
+
+<h2 data-i18n="about_title">
+Building Trust Since 2015
+</h2>
+
+</div>
+
+
+<p class="about-text"
+data-i18n="about_text">
+
+GARNIK PROPERTY SERVICES is a premium construction
+company based in Barcelona.
+
+We specialize in luxury villas, complete renovations,
+swimming pools, electrical systems, plumbing and
+modern interior finishing.
+
+Our mission is simple:
+
+Deliver exceptional quality that exceeds
+client expectations.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section id="reviews" class="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<span data-i18n="reviews_label">
+CLIENT REVIEWS
+</span>
+
+<h2 data-i18n="reviews_title">
+What Our Clients Say
+</h2>
+
+</div>
+
+
+<div class="reviews-grid">
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p data-i18n="review_1">
+Excellent work.
+
+Professional team and amazing quality.
+</p>
+
+<h4>
+Carlos — Barcelona
+</h4>
+
+</div>
+
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p data-i18n="review_2">
+Our swimming pool looks incredible.
+
+Highly recommended.
+</p>
+
+<h4>
+Maria — Castelldefels
+</h4>
+
+</div>
+
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p data-i18n="review_3">
+Everything was completed on schedule.
+
+Very satisfied.
+</p>
+
+<h4>
+Antonio — Sitges
+</h4>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-premium">
+
+    <div class="container">
+
+        <div class="contact-premium-grid">
+
+            <!-- LEFT SIDE -->
+            <div class="contact-intro">
+
+                <span class="contact-label" data-i18n="contact_label">
+                    CONTACT
+                </span>
+
+                <h2 data-i18n="contact_title">
+                    Request a Free Estimate
+                </h2>
+
+                <p class="contact-description" data-i18n="contact_text">
+                    Tell us about your project and our team will contact you shortly.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <a href="tel:+34657138132" class="contact-detail">
+
+                        <div class="contact-detail-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <span>Phone</span>
+                            <strong>+34 657 138 132</strong>
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/31616518113"
+                        target="_blank"
+                        rel="noopener"
+                        class="contact-detail"
+                    >
+
+                        <div class="contact-detail-icon">
+                            💬
+                        </div>
+
+                        <div>
+                            <span>WhatsApp</span>
+                            <strong>+31 616 518 113</strong>
+                        </div>
+
+                    </a>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-detail-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <span>Location</span>
+                            <strong>Barcelona, Spain</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-note">
+                    <span></span>
+                    <p>
+                        Premium construction & property services
+                        in Barcelona and surrounding areas.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="contact-card">
+
+                <div class="contact-card-header">
+
+                    <span>START YOUR PROJECT</span>
+
+                    <h3>
+                        Let's discuss your project
+                    </h3>
+
+                </div>
+
+
+                <form class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-field">
+
+                            <label>
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your Name"
+                                data-i18n-placeholder="name_placeholder"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label>
+                                Phone
+                            </label>
+
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone Number"
+                                data-i18n-placeholder="phone_placeholder"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            data-i18n-placeholder="email_placeholder"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Project type
+                        </label>
+
+                        <select name="project">
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option>
+                                Villa Construction
+                            </option>
+
+                            <option>
+                                Renovation
+                            </option>
+
+                            <option>
+                                Swimming Pool
+                            </option>
+
+                            <option>
+                                Electrical Works
+                            </option>
+
+                            <option>
+                                Plumbing
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Message
+                        </label>
+
+                        <textarea
+                            name="message"
+                            placeholder="Tell us about your project"
+                            data-i18n-placeholder="message_placeholder"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit"
+                        data-i18n="form_button"
+                    >
+                        Send Request
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
         </div>
 
-        <div class="review">
-            <h3>⭐⭐⭐⭐⭐</h3>
-            <p>
-                «Команда настоящих профессионалов. Построили бассейн именно так,
-                как мы хотели. Рекомендуем!»
-            </p>
-            <strong>— Maria, Sitges</strong>
-        </div>
 
-        <div class="review">
-            <h3>⭐⭐⭐⭐⭐</h3>
-            <p>
-                «Спасибо за качественную отделку квартиры. Всё аккуратно и без задержек.»
-            </p>
-            <strong>— Antonio, Tarragona</strong>
+        <!-- MAP -->
+
+        <div class="contact-map">
+
+            <div class="contact-map-header">
+
+                <span>OUR LOCATION</span>
+
+                <strong>Barcelona, Spain</strong>
+
+            </div>
+
+            <iframe
+                src="https://maps.google.com/maps?q=Barcelona&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen
+                title="GARNIK PROPERTY SERVICES Barcelona location">
+            </iframe>
+
         </div>
 
     </div>
+
 </section>
-<a href="https://wa.me/31616518113"
-   class="whatsapp"
-   target="_blank">
-💬
-</a>
-<script src="script.js"></script>
+
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-    <div class="footer-content">
 
-        <h2>GARNIK PROPERTY SERVICES</h2>
+<div class="container">
 
-        <p>Строительство и ремонт под ключ по всей Барселоне.</p>
+<h2>
+GARNIK PROPERTY SERVICES
+</h2>
 
-        <p>📞 <a href="tel:+34657138132">+34 657 138 132</a></p>
+<p data-i18n="footer_text">
+Premium Construction Company in Barcelona
+</p>
 
-        <p>💬 <a href="https://wa.me/31616518113">WhatsApp</a></p>
+<p>
+© 2026 GARNIK PROPERTY SERVICES.
+<span data-i18n="footer_rights">
+All Rights Reserved.
+</span>
+</p>
 
-        <p>© 2025 GARNIK PROPERTY SERVICES. Все права защищены.</p>
+</div>
 
-    </div>
 </footer>
 
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
